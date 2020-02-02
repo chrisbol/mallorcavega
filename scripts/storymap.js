@@ -117,7 +117,7 @@ $(window).on('load', function() {
             icon: L.ExtraMarkers.icon({
               icon: 'fa-number',
               number: ++chapterCount,
-              markerColor: 'lightgreen'
+              markerColor: 'black'
             })
           }
         ));
@@ -231,10 +231,10 @@ $(window).on('load', function() {
           currentlyInFocus = i;
 
           for (k = 0; k < pixelsAbove.length - 1; k++) {
-            changeMarkerColor(k, 'white', 'lightgreen');
+            changeMarkerColor(k, 'green', 'black');
           }
 
-          changeMarkerColor(i, 'lightgreen', 'white');
+          changeMarkerColor(i, 'black', 'green');
 
           // Remove overlay tile layer if needed
           if (map.hasLayer(overlay)) {
