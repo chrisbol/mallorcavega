@@ -231,7 +231,7 @@ $(window).on('load', function() {
           currentlyInFocus = i;
 
           for (k = 0; k < pixelsAbove.length - 1; k++) {
-            changeMarkerColor(k, 'orange', 'blue');
+            changeMarkerColor(k, 'lightgreen', 'blue');
           }
 
           changeMarkerColor(i, 'blue', 'orange');
